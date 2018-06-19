@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    tools:context="com.example.dlangevin.enkorunningv2.InterfaceParametre">
+
+
+    <!-- ENCART ROUGE FONCE-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/ombrage_parametre">
+
+        <!-- BOUTON RETOUR-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retoursport"
+            android:background="@drawable/retourarriere"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/btnretourParametre"/>
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/parametreschaussures"
+            android:id="@+id/textView4"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <!-- ENCART NUMERO SERIE ET COULEUR-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/numerodeserie"
+        android:layout_marginTop="86dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/numeroserie1"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:layout_marginStart="40dip"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <!-- CHAMPS NUMERO DE SERIE VIDE A REMPLIR -->
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dip"
+            android:ems="5"
+            android:hint="......."
+            android:id="@+id/editText"
+            android:layout_marginStart="40dip"
+            android:background="@color/white"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:id="@+id/button"
+            android:layout_marginTop="122dip"
+            android:layout_marginStart="270dip"
+            android:background="@drawable/checknumerodeserie"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:id="@+id/linearcouleur"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/ombrage_parametre">
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Couleur"
+            android:id="@+id/couleur"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dip"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_couleur1"
+                android:layout_marginStart="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/couleur1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_couleur2"
+                android:background="@drawable/couleur2"
+                android:layout_marginTop="10dip"
+                android:layout_marginStart="100dip"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_couleur3"
+                android:background="@drawable/couleur3"
+                android:layout_marginTop="10dip"
+                android:layout_marginStart="160dip"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_couleur4"
+                android:background="@drawable/couleur4"
+                android:layout_marginTop="10dip"
+                android:layout_marginStart="220dip"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_couleur5"
+                android:background="@drawable/couleur5"
+                android:layout_marginTop="10dip"
+                android:layout_marginStart="280dip"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_couleur1cliquer"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="215dip"
+            android:background="@drawable/couleur1cliquer"
+            android:visibility="gone"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_couleur2cliquer"
+            android:background="@drawable/couleur2cliquer"
+            android:layout_marginTop="215dip"
+            android:layout_marginStart="100dip"
+            android:visibility="gone"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_couleur3cliquer"
+            android:background="@drawable/couleur3cliquer"
+            android:layout_marginTop="215dip"
+            android:layout_marginStart="160dip"
+            android:visibility="gone"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_couleur4cliquer"
+            android:background="@drawable/couleur4cliquer"
+            android:layout_marginTop="215dip"
+            android:layout_marginStart="220dip"
+            android:visibility="gone"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_couleur5cliquer"
+            android:background="@drawable/couleur5cliquer"
+            android:layout_marginTop="215dip"
+            android:layout_marginStart="280dip"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linearnotifs"
+        android:layout_marginTop="280dp"
+        >
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Notifications"
+            android:id="@+id/notif"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dip"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non"
+        android:textColor="@color/white"
+        android:id="@+id/switch2"
+        android:layout_marginStart="190dip"
+        android:layout_marginTop="310dip"
+        android:background="@drawable/notifs"/>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/linearniveau"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/ombrage_parametre"
+        >
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Niveau"
+            android:id="@+id/niveau"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dip"
+            android:textColor="#ffffff" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <SeekBar
+            android:orientation="horizontal"
+            android:layout_width="268dip"
+            android:layout_height="2dip"
+            android:id="@+id/seekBar3"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="490dip"
+            android:background="#ffffff"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/selecteur"
+            />
+
+        <!--Succession des 6 Boutons de grade-->
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:background="@drawable/thumb_niveau"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="480dip"
+            android:id="@+id/btn_progression1"/>
+
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginStart="165dip"
+            android:layout_marginTop="480dip"
+            android:background="@drawable/thumb_niveau"
+            android:id="@+id/btn_progression2"/>
+
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginStart="290dip"
+            android:layout_marginTop="480dip"
+            android:background="@drawable/thumb_niveau"
+            android:id="@+id/btn_progression3"
+            />
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:layout_marginStart="45dip"
+            android:layout_marginTop="480dip"
+            android:id="@+id/btn_progression1cliquer"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_marginStart="170dip"
+            android:layout_marginTop="480dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:id="@+id/btn_progression2cliquer"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_marginStart="295dip"
+            android:layout_marginTop="480dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:id="@+id/btn_progression3cliquer"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débutant"
+            android:textColor="@color/white"
+            android:layout_marginTop="510dip"
+            android:layout_marginStart="25dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occasionnel"
+            android:textColor="@color/white"
+            android:layout_marginTop="510dip"
+            android:layout_marginStart="140dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmé"
+            android:textColor="@color/white"
+            android:layout_marginTop="510dip"
+            android:layout_marginStart="275dip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/linearsexe"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/ombrage_parametre"
+
+        >
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sexe"
+            android:id="@+id/sexe"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dip"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme   /F"
+            android:textColor="@color/white"
+            android:id="@+id/switchsexe"
+            android:layout_marginStart="190dip"
+            android:layout_marginTop="380dip"
+            android:background="@drawable/notifs"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dip">
+
+        <SeekBar
+            android:orientation="horizontal"
+            android:layout_width="268dip"
+            android:layout_height="2dip"
+            android:id="@+id/seekBarObjectifs"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="510dip"
+            android:background="#ffffff"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/selecteur"
+            />
+
+        <!--Succession des 6 Boutons de grade-->
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:background="@drawable/thumb_niveau"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="500dip"
+            android:id="@+id/btn_objectif1"/>
+
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginStart="165dip"
+            android:layout_marginTop="500dip"
+            android:background="@drawable/thumb_niveau"
+            android:id="@+id/btn_objectif2"/>
+
+        <ImageButton
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginStart="290dip"
+            android:layout_marginTop="500dip"
+            android:background="@drawable/thumb_niveau"
+            android:id="@+id/btn_objectif3"
+            />
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:layout_marginStart="45dip"
+            android:layout_marginTop="505dip"
+            android:id="@+id/btn_objectif1cliquer"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_marginStart="170dip"
+            android:layout_marginTop="505dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:id="@+id/btn_objectif2cliquer"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_marginStart="295dip"
+            android:layout_marginTop="505dip"
+            android:background="@drawable/thumb_niveau_cliquer"
+            android:id="@+id/btn_objectif3cliquer"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perte de Poids"
+            android:textColor="@color/white"
+            android:layout_marginTop="520dip"
+            android:layout_marginStart="25dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rééducation"
+            android:textColor="@color/white"
+            android:layout_marginTop="520dip"
+            android:layout_marginStart="140dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loisir"
+            android:textColor="@color/white"
+            android:layout_marginTop="520dip"
+            android:layout_marginStart="285dip"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/linearLayoutobjectifs"
+        android:layout_marginTop="555dp">
+
+
+        <!-- TITRE PARAMETRE CHAUSSURES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Objectifs"
+            android:id="@+id/textViewobjectif"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="40dip"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="50dip"
+        android:src="@drawable/settings"
+        android:layout_marginTop="20dip"
+        android:layout_marginStart="70dip"/>
+
+
+</RelativeLayout>
+
+

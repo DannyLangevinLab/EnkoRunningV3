@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff">
+    <!-- ENCART ROSE HAUT-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:fitsSystemWindows="true"
+        android:background="#c7274d">
+        <!-- BOUTON RETOUR-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retoursport"
+            android:background="@drawable/retourarriere"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- LOGO SANTE-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/iconesante"
+            android:contentDescription="@string/iconestats"/>
+        <!-- BOUTON DRAWER-->
+        <ImageButton
+            android:layout_width="25dip"
+            android:layout_height="20dip"
+            android:id="@+id/btn_drawer2"
+            android:background="@drawable/btn_drawer_droit_blanc"
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="305dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- TITRE SANTE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santé"
+            android:layout_marginTop="-35dp"
+            android:layout_marginStart="150dp"
+            android:id="@+id/Social"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            />
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="15dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="#c7274d" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#FFFFFF"
+            tools:context="com.example.pcdrainost.enkorunningv2.InterfaceTempscourses">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                >
+                <!-- LOGO ONGLET-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/courbesutilisations"
+                    android:background="@drawable/fragmenttemps"
+                    android:contentDescription="@string/iconecourbes"/>
+                <!-- TITRE ONGLET-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="35dp"
+                    android:text="@string/titrePageTempsdecourses"
+                    android:textColor="#c7274d"
+                    android:id="@+id/sportcourbesutils"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ombrage"
+                android:layout_gravity="center_horizontal">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

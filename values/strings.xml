@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">EnkoRunningV3</string>
+    <string name="logocentral">logo</string>
+    <string name="divertissement">Sante</string>
+    <string name="sports">Sport</string>
+    <string name="technologie">Social</string>
+    <string name="international">Parametre</string>
+    <string name="sante">SANTE</string>
+    <string name="Parametres">parametre</string>
+    <string name="essai">Les plus efficces en consommation de calories</string>
+    <string name="test">Les plus efficaces en consommation de calories</string>
+    <string name="lesplusdifficiles">Les plus Difficiles</string>
+    <string name="recommandations">Les Recommandations</string>
+    <string name="courbesutilisationssante">Les Courbes d\'Utilisation</string>
+    <string name="DF">Les Temps de Course</string>
+    <string name="QD">DCQC</string>
+    <string name="lespluscourants">Les plus courants</string>
+    <string name="plusrapides">Les plus Rapides</string>
+    <string name="lesplusprisés">Les plus prises</string>
+    <string name="classements">Les Classements</string>
+    <string name="title_activity_interface_nav">InterfaceNav</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="logoaccueil">logo</string>
+    <string name="boutonsport">boutonSport</string>
+    <string name="boutonPartager">boutonPartager</string>
+    <string name="boutonSante">boutonSante</string>
+    <string name="titredrawermenu">ENKO</string>
+    <string name="itemprofil">Profil</string>
+    <string name="itemstats">Stats</string>
+    <string name="itemparametres">Parametres</string>
+    <string name="itemdeco">Deconnexion</string>
+
+
+
+    <string name="parametrechaussure">Paramètres Chaussure</string>
+    <string name="numeroserie">Numéro de série</string>
+    <string name="couleur">Couleur</string>
+    <string name="parametresysteme">Parametres Systeme</string>
+    <string name="notifs">Notifications</string>
+    <string name="perf">Performance</string>
+    <string name="pertepoids">Perte de Poids</string>
+    <string name="numeroserie1">Numéro de Série</string>
+    <string name="textcouleur">Couleur</string>
+    <string name="paramsysteme">Parametres Système</string>
+    <string name="parametreschaussures">Parametres Chaussures</string>
+    <string name="sexeh">Homme</string>
+    <string name="sexef">Femme</string>
+    <string name="questiontype">Quel type de courreur etes-vous ?</string>
+    <string name="typeconfirme">Confirmé</string>
+    <string name="typeocassionel">Occasionnel</string>
+    <string name="typedebutant">Débutant</string>
+    <string name="questionobjectifs">Des Objectifs ?</string>
+    <string name="radioperf">Performances</string>
+    <string name="radiopoids">Perte de Poids</string>
+    <string name="textepoids">Votre Poids Initial</string>
+    <string name="switchnotif">Notifications</string>
+    <string name="valider">Valider</string>
+    <string name="btnretourParametre">retourArriere</string>
+    <string name="iconestats">iconeStats</string>
+    <string name="pageSport">Sport</string>
+    <string name="courbesutils">Les Courbes d\'Utilisations</string>
+    <string name="onglet1COURBES">Economie Articulaire</string>
+    <string name="onglet2COURBES">Distance Supplémentaire</string>
+    <string name="onglet3COURBES">Vitesse Moyenne</string>
+    <string name="onglet4courbes">Energie Renvoyée</string>
+    <string name="btnretourarriere">retourarriere</string>
+    <string name="iconecourbes">iconecourbes</string>
+    <string name="iconeeconomie">iconeeconomie</string>
+    <string name="iconedistance">iconedistance</string>
+    <string name="iconevistesse">iconevitesse</string>
+
+
+
+
+    <string name="item_title">Palais Garnier</string>
+    <string name="item_desc">The Palais Garnier which locates in Paris was built from 1861 for
+        the Paris Opera.
+    </string>
+    <string name="detail_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+    </string>
+    <string name="detail_location">"8 Rue Scribe, 75009 Paris, France"</string>
+    <string name="titlepageSport">SPORT</string>
+    <string name="lesplussouplepagesport">Les Plus Souples</string>
+    <string name="pagesportvitesseMoyenn">Vitesse Moy.</string>
+    <string name="DernierTempspagesport">Dernier Temps</string>
+    <string name="vitessedeskm">15 Km/H</string>
+    <string name="chronoderniertemps">2h38</string>
+    <string name="imagedelacarte">MapGoogle</string>
+    <string name="iconepagesouples">iconepagesouples</string>
+    <string name="iconesante">iconesante</string>
+    <string name="titrePageCalories">Les plus efficaces en consommation de Calories</string>
+    <string name="titrePageDifficiles">Les plus Difficiles</string>
+    <string name="titrePageRecommandations">Les Recommandations</string>
+    <string name="titrePageTempsdecourses">Les Temps de Courses</string>
+    <string name="titrepageSport">Sport</string>
+    <string name="titrePageSocial">Social</string>
+    <string name="pagesocialrapides">Les plus Rapides</string>
+    <string name="titrepageprises">Les Plus Prisés</string>
+    <string name="titrepageclassements">Les Classements</string>
+    <string name="titrePageStatistiques">Statistiques</string>
+    <string name="titrepagePartager">PARTAGER</string>
+    <string name="titrepageSante">SANTE</string>
+    <string name="titrePageSport">SPORT</string>
+    <string name="nomdelapp">EnKo Running V3</string>
+
+    <string-array name="trajets">
+        <item>Trajet 1 </item>
+        <item>Trajet 2 </item>
+        <item>Trajet 3 </item>
+    </string-array>
+
+    <string name="step_counter">
+         android.hardware.sensor.stepcounter
+   </string>
+
+<string name="step_detector">
+         android.hardware.sensor.stepdetector
+   </string>
+</resources>
+

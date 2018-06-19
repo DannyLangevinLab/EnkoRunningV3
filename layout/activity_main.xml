@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dlangevin.enkorunningv2.MainActivity"
+    android:textAlignment="center">
+
+    <!-- affichage dynamique de la liste d'ONGLETS-->
+    <com.github.florent37.materialviewpager.MaterialViewPager
+        android:id="@+id/materialViewPager"
+        app:viewpager_color="@color/principale"
+        app:viewpager_enableToolbarElevation="true"
+        app:viewpager_headerAlpha="0.6"
+        app:viewpager_headerHeight="120dp"
+        app:viewpager_hideLogoWithFade="true"
+        app:viewpager_hideToolbarAndTitle="false"
+        app:viewpager_pagerTitleStrip="@layout/tab_onglets"
+        app:viewpager_logoMarginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="textStart"
+        />
+
+
+
+    <!-- LOGO ENKO en haut a gauche cote fleche retour-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/logoenko"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dip"
+                android:layout_marginTop="45dip"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:id="@+id/btn_drawer2"
+        android:layout_marginTop="45dip"
+        android:layout_marginRight="20dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_drawer_droit_blanc"/>
+
+
+</RelativeLayout>
+
+
+

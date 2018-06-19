@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+UNE SEUL CARTE POUR LA PAGE PARAMETRE
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- debut de la CARTE-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFCE0B0B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:context="com.example.pcdrainost.enkorunning.InterfaceParametre">
+
+            <!-- ENCART PARAMETRE CHAUSSURES-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="25dp"
+                android:background="#bd0c0c">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/parametreschaussures"
+                    android:id="@+id/textView4"
+                    android:layout_marginTop="-35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/linearLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/numeroserie1"
+                    android:id="@+id/textView"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/textcouleur"
+                    android:id="@+id/textView2"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText2"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <!-- ENCART PARAMETRES SYSTEME-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="240dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/linearLayout3"
+                android:background="#bd0c0c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/paramsysteme"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <!-- ENCART AVEC TOUS LES RADIOS BOUTONS ,LE POIDS ET BOUTON VALIDER-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp">
+
+                <RadioButton
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-53dp"
+                    android:text="@string/sexeh"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/radioButton2"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/switchnotif"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginStart="220dp"
+                    android:id="@+id/switch1"
+                    android:checked="false"
+                    android:textColor="#ffffff"
+                    />
+
+                <RadioButton
+                    android:layout_width="88dp"
+                    android:layout_marginTop="-34dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexef"
+                    android:id="@+id/radioButton"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/questiontype"
+                    android:id="@+id/textView5" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/typedebutant"
+                    android:id="@+id/radioButton3"
+                    android:checked="false"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/typeocassionel"
+                    android:id="@+id/radioButton4"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-35dp"
+                    android:layout_marginStart="250dp"
+                    android:text="@string/typeconfirme"
+                    android:id="@+id/radioButton5"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/questionobjectifs"
+                    android:id="@+id/textView6" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiopoids"
+                    android:id="@+id/radioButton7"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-35dp"
+                    android:layout_marginStart="160dp"
+                    android:text="@string/radioperf"
+                    android:id="@+id/radioButton6"
+                    android:textColor="#ffffff" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/seekBar"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/textepoids"
+                    android:id="@+id/textView7" />
+
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valider"
+                    android:id="@+id/checkBox"
+                    android:layout_marginStart="250dp"
+                    android:background="#ffffff"
+                    android:checked="false" />
+
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-30dp"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:id="@+id/editText3" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

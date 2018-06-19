@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FFFAFAFA"
+    tools:context="com.example.dlangevin.enkorunningv2.InterfaceNav"
+    tools:showIn="@layout/app_bar_main"
+    android:paddingEnd="21dip"
+    android:weightSum="1"
+    android:fitsSystemWindows="true"
+    >
+    <!-- CONTENEUR de l'image de fond et des boutons-->
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondaccueil"
+        >
+        <!-- ENCART SPORT-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marge_haut_btnsport"
+            android:layout_marginStart="@dimen/marge_gauche_btnsort"
+            android:id="@+id/encartsport">
+            <!-- disposition du bouton SPORT-->
+            <ImageButton
+                android:layout_width="@dimen/taille_largeur_btnsport"
+                android:layout_height="@dimen/taille_hauteur_btnsport"
+                android:background="@drawable/btnsportmiroir"
+                android:contentDescription="@string/boutonsport"
+                android:id="@+id/sport"
+                />
+            <!-- TEXTE SPORT-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/titrePageSport"
+               android:layout_marginStart="15dip"
+                android:id="@+id/textView14"
+                android:textSize="@dimen/taille_texte_btnsante"
+                android:textColor="#ffffff" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!--Bar de progression-->
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:paddingBottom="5dip"
+                android:paddingTop="30dip"
+                android:id="@+id/seekBar2"
+                android:layout_marginTop="15dip"
+                android:progressDrawable="@drawable/selecteur"
+                android:thumb="@drawable/thumb_invisible"
+                android:indeterminate="false"
+               />
+
+
+
+
+                <!--Succession des 6 Boutons de grade-->
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/thumb_image"
+        android:layout_marginStart="0dip"
+        android:layout_marginTop="42dip"
+        android:id="@+id/btn_progression0"/>
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/thumb_image"
+        android:layout_marginStart="50dip"
+        android:layout_marginTop="42dip"
+        android:id="@+id/btn_progression1"/>
+
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginStart="100dip"
+        android:layout_marginTop="42dip"
+        android:background="@drawable/thumb_image"
+        android:id="@+id/btn_progression2"/>
+
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginStart="150dip"
+        android:layout_marginTop="42dip"
+        android:background="@drawable/thumb_image"
+        android:id="@+id/btn_progression3"/>
+
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginStart="200dip"
+        android:layout_marginTop="42dip"
+        android:id="@+id/btn_progression4"
+        android:background="@drawable/thumb_image"/>
+
+    <ImageButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginStart="250dip"
+        android:layout_marginTop="42dip"
+        android:background="@drawable/thumb_image"
+        android:id="@+id/btn_progression5"/>
+
+</RelativeLayout>
+
+        </LinearLayout>
+        <!-- encart visible au clique le bouton SPORT devient rouge-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/taille_largeur_btnsport"
+            android:layout_height="@dimen/taille_hauteur_btnsport"
+            android:layout_marginStart="@dimen/marge_gauche_btnsortrouge"
+            android:layout_marginTop="@dimen/marge_haut_btnsportrouge"
+            android:elevation="10dp"
+            android:background="@drawable/btnsportrose"
+            android:id="@+id/encartsportnoir"
+            android:visibility="gone">
+        </LinearLayout>
+
+
+        <!-- ENCART PARTAGER-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/taille_linear_btnpartager"
+    android:layout_marginTop="@dimen/marge_haut_btnpartager"
+    android:layout_marginStart="@dimen/marge_gauche_btnpartager"
+    android:id="@+id/partagerll">
+    <!-- bouton PARTAGER-->
+            <ImageButton
+            android:layout_width="@dimen/taille_largeur_btnpartager"
+            android:layout_height="@dimen/taille_hauteur_btnpartager"
+            android:background="@drawable/btnparftagermiroir"
+            android:contentDescription="@string/boutonPartager"
+            android:id="@+id/partager"
+            />
+</LinearLayout>
+        <!-- BOUTON partager visible au clique-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/taille_largeur_btnpartager"
+            android:layout_height="@dimen/taille_hauteur_btnpartager"
+            android:layout_marginStart="@dimen/marge_gauche_btnpartagerrouge"
+            android:layout_marginTop="@dimen/marge_haut_btnpartagerrouge"
+            android:background="@drawable/btnpartagerrose"
+            android:id="@+id/encartpartagernoir"
+            android:visibility="gone">
+        </LinearLayout>
+
+
+        <!-- ENCART SANTE-->
+            <ImageButton
+                android:orientation="horizontal"
+                android:layout_width="@dimen/taille_largeur_btnsante"
+                android:layout_height="@dimen/taille_hauteur_btnsante"
+                android:layout_marginTop="@dimen/marge_haut_btnsante"
+                android:layout_marginStart="@dimen/marge_gauche_btnsante"
+                android:background="@drawable/btnsantemiroir"
+                android:contentDescription="@string/boutonSante"
+                android:id="@+id/sante" />
+        <!-- texte SANTE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrepageSante"
+            android:id="@+id/textView13"
+            android:layout_below="@+id/sante"
+            android:layout_alignStart="@+id/sante"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/taille_texte_btnsante"/>
+        <!-- BOUTON SANTE visible au clique-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="@dimen/taille_largeur_btnsante"
+            android:layout_height="@dimen/taille_hauteur_btnsante"
+            android:layout_marginTop="@dimen/marge_haut_btnsante"
+            android:layout_marginStart="@dimen/marge_gauche_btnsante"
+            android:background="@drawable/btnsanterose"
+            android:id="@+id/trianglesanterouge"
+            android:visibility="gone"
+            >
+        </LinearLayout>
+
+
+        <!-- texte PARTAGER-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/titrepagePartager"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/partagerll"
+            android:layout_alignStart="@+id/partagerll"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/taille_texte_btnsante"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dip"
+            android:layout_height="20dip"
+            android:gravity="right"
+            android:layout_marginStart="80dip"
+            android:layout_marginTop="30dip"
+            android:id="@+id/btn_drawer2"
+            android:layout_alignStart="@+id/sante"
+            android:background="@drawable/btn_drawer_droit"/>
+    </RelativeLayout>
+
+
+    <!-- IMAGE FIXEE EN BAS POUR TENSION RESSORT-->
+    <LinearLayout android:background="@drawable/barrebas"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="0dip"
+        android:layout_marginTop="550dip">
+
+    </LinearLayout>
+</LinearLayout>

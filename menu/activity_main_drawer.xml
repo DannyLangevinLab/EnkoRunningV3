@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/vide4"
+            android:title=""
+            />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/profil"
+            android:title="@string/itemprofil"
+
+            />
+
+        <item
+            android:id="@+id/vide1"
+            android:title=""
+            />
+
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/statistique"
+            android:title="@string/itemstats"
+
+            />
+
+        <item
+            android:id="@+id/vide2"
+            android:title=""
+            />
+        <item
+            android:id="@+id/nav_param"
+            android:icon="@drawable/parametres"
+            android:title="@string/itemparametres" />
+        <item
+            android:id="@+id/vide3"
+            android:title=""
+            />
+        <item
+            android:id="@+id/nav_deco"
+            android:icon="@drawable/deconnexion"
+            android:title="@string/itemdeco" />
+    </group>
+
+
+
+</menu>

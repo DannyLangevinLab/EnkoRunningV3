@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:fitsSystemWindows="true"
+        android:background="#c7274d">
+        <!-- BOUTON RETOUR -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retoursport"
+            android:background="@drawable/retourarriere"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- LOGO SPORT -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/logosport"
+            android:contentDescription="@string/iconestats"/>
+        <!-- BOUTON DRAWER-->
+        <ImageButton
+            android:layout_width="25dip"
+            android:layout_height="20dip"
+            android:id="@+id/btn_drawer2"
+            android:background="@drawable/btn_drawer_droit_blanc"
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="305dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- TITRE SPORT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrepageSport"
+            android:layout_marginTop="-35dp"
+            android:layout_marginStart="150dp"
+            android:id="@+id/Social"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            />
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="15dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="#c7274d" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            tools:context="com.example.pcdrainost.enkorunningv2.InterfaceCourbesSport">
+
+    <RelativeLayout
+        android:layout_height="59dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+        <!-- LOGO PLUS SOUPLES -->
+    <ImageView
+        android:background="@drawable/fragmentsouples"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/souples"
+        android:contentDescription="@string/iconepagesouples"/>
+        <!-- TITRE PLUS SOUPLES-->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/plussouples"
+        android:textColor="#FF000000"
+        android:textSize="20sp"
+        android:text="@string/lesplussouplepagesport"/>
+
+</RelativeLayout>
+            <!-- MENU DEROULANT VERS LE BAS -->
+    <Spinner
+        android:layout_height="50dp"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/spinner"
+        android:entries="@array/trajets"
+        android:clickable="true"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/ombrage"/>
+            <!-- IMAGE DE LA MAP -->
+    <ImageView
+        android:background="@drawable/map"
+        android:layout_height="270dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/imagedelacarte"/>
+
+            <!-- ENCART VITESSE MOYENNE-->
+    <LinearLayout
+        android:background="@drawable/essaiombre"
+        android:layout_height="98dp"
+        android:layout_width="180dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView8"
+        android:textSize="20sp"
+        android:text="@string/pagesportvitesseMoyenn"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView10"
+        android:textColor="#FFC7294E"
+        android:textSize="25sp"
+        android:text="@string/vitessedeskm"/>
+
+</LinearLayout>
+
+            <!-- ENCART DERNIER TEMPS -->
+    <LinearLayout
+        android:background="@drawable/essaiombre"
+        android:layout_height="98dp"
+        android:layout_width="180dp"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="-100dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:text="@string/DernierTempspagesport"/>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="-50dp"
+        android:id="@+id/textView11"
+        android:textColor="#FFC7294E"
+        android:textSize="25sp"
+        android:text="@string/chronoderniertemps"/>
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

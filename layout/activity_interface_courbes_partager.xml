@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:fitsSystemWindows="true"
+        android:background="#c7274d">
+        <!-- BOUTON RETOUR-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retoursport"
+            android:background="@drawable/retourarriere"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- LOGO SOCIAL-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/iconesocial"
+            android:contentDescription="@string/iconestats"/>
+        <!-- BOUTON DRAWER-->
+        <ImageButton
+            android:layout_width="25dip"
+            android:layout_height="20dip"
+            android:id="@+id/btn_drawer2"
+            android:background="@drawable/btn_drawer_droit_blanc"
+            android:layout_marginTop="-20dp"
+            android:layout_marginStart="305dp"
+            android:contentDescription="@string/btnretourarriere"/>
+        <!-- TITRE SOCIAL-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrePageSocial"
+            android:layout_marginTop="-35dp"
+            android:layout_marginStart="150dp"
+            android:id="@+id/Social"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            />
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="15dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="#c7274d" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.example.pcdrainost.enkorunningv2.InterfaceCourbesPartager">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/courbesutilisations"
+            android:background="@drawable/fragmentcourbes"
+            android:contentDescription="@string/iconecourbes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:text="@string/courbesutils"
+            android:textColor="#c7274d"
+            android:id="@+id/sportcourbesutils"
+            />
+    </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Graph Economie-->
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/grapheconomie"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:layout_marginEnd="20dip"
+                    android:title="Graph Title"
+                    app:seriesColor="#FF6A81A8"
+                    app:seriesData="0=5;2=6;3=5;4=8"
+                    app:seriesTitle="Eco.Articulaire"
+                    app:seriesType="line"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Graph Economie-->
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graphdistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginEnd="20dip"
+                    android:title="Graph Title"
+                    app:seriesColor="#FFA8CA8C"
+                    app:seriesData="0=1;2=2;3=3;4=5"
+                    app:seriesTitle="Distance Sup."
+                    app:seriesType="line"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Graph Vitesse-->
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graphvitesse"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginEnd="20dip"
+                    android:title="Graph Title"
+                    app:seriesColor="#FFFE8375"
+                    app:seriesData="0=30;2=25;3=13;4=45"
+                    app:seriesTitle="Vitesse Moy."
+                    app:seriesType="line"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Graphe Energie-->
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graphenergie"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginEnd="20dip"
+                    android:title="Graph Title"
+                    app:seriesColor="#FFFE8375"
+                    app:seriesData="0=14;2=5;3=4;4=6;5=8;6=9;7=10"
+                    app:seriesTitle="Energie Ren."
+                    app:seriesType="line"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginEnd="20dip"
+                android:layout_marginStart="20dip"
+                android:src="@drawable/total_courbes"
+                android:visibility="gone"
+                android:id="@+id/total_courbes"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/ombrage">
+                <ImageButton
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginStart="140dip"
+                    android:id="@+id/imageButton"
+                    android:background="@drawable/facebooksocial"/>
+
+                <ImageButton
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:id="@+id/imageButton2"
+                    android:background="@drawable/twittersocial"/>
+
+
+            </LinearLayout>
+            <!-- ENCART ECONOMIE ARTICULAIRE-->
+            <LinearLayout
+                android:id="@+id/btn_economie"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/ombrage"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/souples"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/traiteconomie"
+                    android:contentDescription="@string/iconeeconomie"/>
+                <TextView
+                    android:id="@+id/socialplussouples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/onglet1COURBES"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+            <!-- ENCART DISTANCE SUPPLEMENTAIRE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ombrage"
+                android:clickable="true"
+                android:id="@+id/btn_distance">
+
+                <ImageView
+                    android:id="@+id/difficiles"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/traitdistance"
+                    android:contentDescription="@string/iconedistance"/>
+
+                <TextView
+                    android:id="@+id/socialplusdifficiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/onglet2COURBES"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <!-- ENCART VITESSE MOYENNE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ombrage"
+                android:clickable="true"
+                android:id="@+id/btn_vitesse">
+
+                <ImageView
+                    android:id="@+id/recommendations"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/traitvitesse"
+                    android:contentDescription="@string/iconevistesse"/>
+
+                <TextView
+                    android:id="@+id/plusrecommandes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/onglet3COURBES"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <!-- ENERGIE RENVOYEE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ombrage"
+                android:clickable="true"
+                android:id="@+id/btn_energie">
+
+                <ImageView
+                    android:id="@+id/courbes"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/traitenergie"
+                    android:contentDescription="@string/iconecourbes"/>
+
+                <TextView
+                    android:id="@+id/courbesutils"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/onglet4courbes"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+            <!-- ENCART ECONOMIE ARTICULAIRE-->
+            <LinearLayout
+                android:id="@+id/btn_total"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ombrage"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/image_total"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/trait_total"
+                    android:contentDescription="@string/iconeeconomie"/>
+                <TextView
+                    android:id="@+id/text_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tous les Résultats"
+                    android:textColor="#FF000000"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:title="">
+            <menu >
+                <item
+                    android:id="@+id/nav_calories"
+                    android:icon="@drawable/flamme"
+                    android:title="Calories"
+                    android:gravity="center|center_vertical"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+
+            </menu>
+        </item>
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_amorti"
+                    android:icon="@drawable/shoes30"
+                    android:title="Amorti"
+                    android:gravity="center|center_vertical"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+
+            </menu>
+        </item>
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_articulation"
+                    android:icon="@drawable/articulation"
+                    android:title="Economie Articulaire"
+                    android:gravity="center|center_vertical"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+
+            </menu>
+        </item>
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_trajet"
+                    android:icon="@drawable/chrono"
+                    android:title="Trajet Moyen"
+                    android:gravity="center|center_vertical"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+
+            </menu>
+        </item>
+
+        <item android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_partager"
+                    android:icon="@drawable/share"
+                    android:title="Partager"
+                    android:gravity="center|center_vertical"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/stats"
+                    android:icon="@drawable/statistique"
+                    android:gravity="center|center_vertical"
+                    android:title="Statistiques"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/courbes"
+                    android:icon="@drawable/courbes"
+                    android:gravity="center|center_vertical"
+                    android:title="Courbes"
+                    app:actionViewClass="android.widget.TextView"
+                    app:showAsAction="always"
+                    />
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="taille_linear_btnpartager">70dip</dimen>
+    <dimen name="marge_haut_btnpartager">140dip</dimen>
+    <dimen name="taille_largeur_btnpartager">90dip</dimen>
+    <dimen name="taille_hauteur_btnpartager">70dip</dimen>
+    <dimen name="marge_gauche_btnpartager">37dip</dimen>
+    <dimen name="taille_linear_btnpartagerrouge">90dip</dimen>
+    <dimen name="marge_haut_btnpartagerrouge">140dip</dimen>
+    <dimen name="marge_gauche_btnpartagerrouge">37dip</dimen>
+
+    <dimen name="taille_linear_btnsante">90dip</dimen>
+    <dimen name="marge_haut_btnsante">250dip</dimen>
+    <dimen name="taille_largeur_btnsante">90dip</dimen>
+    <dimen name="taille_hauteur_btnsante">70dip</dimen>
+    <dimen name="marge_gauche_btnsante">190dip</dimen>
+    <dimen name="taille_linear_btnsanterouge">90dip</dimen>
+    <dimen name="marge_haut_btnsanterouge">250dip</dimen>
+    <dimen name="marge_gauche_btnsanterouge">190dip</dimen>
+    <dimen name="taille_texte_btnsante">20sp</dimen>
+
+    <dimen name="marge_haut_btnsport">350dip</dimen>
+    <dimen name="marge_gauche_btnsort">40dip</dimen>
+    <dimen name="taille_largeur_btnsport">90dip</dimen>
+    <dimen name="taille_hauteur_btnsport">70dip</dimen>
+    <dimen name="marge_haut_btnsportrouge">350dip</dimen>
+    <dimen name="marge_gauche_btnsortrouge">40dip</dimen>
+</resources>
